@@ -1,13 +1,15 @@
 :root {
         --brand-color: #212121;
         --accent-color: #2196f3;
-
-        }
+        --basic-color: #ffffff;
+       }
 
 /*BASE*/
 body {font-family: 'Roboto', sans-serif;
         color: var(--brand-color);
         letter-spacing: 0.03em;
+        font-size: 14px;
+        background-color: #ffffff;
         }
 
 /*IU*/
@@ -16,32 +18,50 @@ body {font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.18;
-        }
+        letter-spacing: 0.03em;
+        color: #2196f3;
+        text-decoration: none;}
 
-span .header-studio {font-family: 'Raleway', sans-serif; font-weight: 700px;}
-.contacts {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.20;
-        }
-
-.footer-webstudio {font-family: 'Raleway', sans-serif;
-text-decoration: none;}
-span .footer-studio {font-family: 'Raleway', sans-serif;}
-
-.header-webstudio {color: #2196f3;
-text-decoration: none;}
 .header-webstudio .header-studio {color: #000000;}
-.header-webstudio:hover {color: #188ce8;}
-.header-webstudio .header-studio:hover {color: #188ce8;}
+
+span .header-studio {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700px;}
+
+.contacts-mail {font-weight: 500;
+       line-height: 1.20;
+text-decoration: none;}
+
+.contacts-mail:hover {color: #188ce8;}
+.contacts-mail:focus {color: #188ce8;}
+
+.contacts-tel {font-weight: 500;
+        line-height: 1.20;
+        text-decoration: none;
+        color: #757575;}
+
+.contacts-tel:hover {color: #188ce8;}
+.contacts-tel:focus { color: #188ce8;}
+
+
+.footer-webstudio {
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.18;
+        text-decoration: none;}
+
+span .footer-studio {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700px;}
+
+
 
 .marker {list-style: none;}
 
 
 
-.link {color: #212121;
+.link {color: var(--brand-color);
         font-weight: 500;
-        font-size: 14px;
+       
         line-height: 1.20;
         text-decoration: none;
        }
@@ -50,69 +70,66 @@ text-decoration: none;}
 
 .current {color:var(--accent-color);}
 
-.current-portfolio:hover {background: #2196f3; color: #ffffff;}
-.current-portfolio:focus {background: #2196f3; color: #ffffff;}
-
+.current-portfolio:hover {background: #2196f3; color: var(--basic-color);}
+.current-portfolio:focus {background: #2196f3; color: var(--basic-color);}
+.current-portfolio:active {background: #2196f3;color: var(--basic-color); border-color: #ffffff;}
 
 .hero {background-color: #2f303a;
         }
 
-.hero-title {color: #ffffff;
+.hero-title {color: var(--basic-color);
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
+        letter-spacing: 0.06em;
         }
 
-.name-button {color: #fff;
+.name-button {color: var(--basic-color);
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
         }
 
-.title-text {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-       }
 
 .team {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
+        letter-spacing: 0.03ex;
+        color: #212121;
         }
 
  .title-contents {
         font-weight: 700;
-        font-size: 14px;
         line-height: 1.14;
+        letter-spacing: 00.03em;
+        text-transform: uppercase;
         }
 
-.content {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.67;
+.content {line-height: 1.67;
         text-decoration: none;}
 
-.job {font-size: 16px;
+.team-position {font-size: 16px;
         line-height: 1.17;
-        }
+        letter-spacing: 0.03ex;
+        color: #757575;}
 
 /* buttons*/
-.button { background-color: #2196f3; 
+.button {background-color: #2196f3; 
         width: 200px;
         height: 50px;
         border-radius: 4px; 
-        
         box-shadow: 0px 4px 4px rgba(0, g0reen, bl0ue, 0.15);}
+
 .button:hover {background-color: #188ce8;}
 
 
-.cards-portfolio {background-color: #f5f4fa;
-        font-weight: 500;
+.cards-portfolio {font-weight: 500;
         font-size: 16px;
         line-height: 1.53;
         border-radius: 4px;
         font-family: inherit;
+        background: #f5f4fa;
        }
 .cards-portfolio:hover {background-color: #2196f3;}
 .name_button-port {color: #000000;}
@@ -123,44 +140,52 @@ text-decoration: none;}
 .contacts:hover {color: #2196f3;}
 .contacts:focus {color: #2196f3;}
 
-.footer {background-color: #2f303a;}
+.foot {background-color: #2f303a;
+        }
 
 .contact-footer {
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
         line-height: 1.68;
         text-decoration: none;
         color: rgba(225, 225, 225, 0.6);
         }
-.contact-adress {
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 1.68;
-                        text-decoration: none;
-                        color: #ffffff;
+.contact-footer:hover {color: #2196f3;}
+.contact-adress {font-style: normal;
+                font-weight: 400;
+               line-height: 1.68;
+                text-decoration: none;
+                 color: var(--basic-color);
                 }
 
-  .footer-webstudio {color: #2196f3;}
-  .footer-webstudio .studio {color: #fff;}
-  .footer-webstudio:hover {color: #188ce8;}
-  .footer-webstudio .studio:hover {color: #188ce8;}
 
-.footer-webstudio {font-family: 'Raleway', sans-serif;
+
+.footer-webstudio {color: #2196f3;}
+.footer-webstudio .studio {color: #ffffff;}
+
+.footer-webstudio {
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.17;
-}
+       }
 
 .name-project {
-        
         font-size: 18px;
         line-height: 2.00;
         }
+/*hiden*/
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
 
-.job {
-        font-size: 16px;
-        line-height: 1.86;
-        }
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
