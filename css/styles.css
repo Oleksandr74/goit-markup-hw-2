@@ -7,6 +7,7 @@
 
        /*NORMALIZE*/
 a {display: inline-block;}
+
 *,
 *::before,
 *::after {
@@ -68,7 +69,6 @@ span .footer-studio {
 
 .marker {list-style: none;
 }
-
 
 .link {color: var(--brand-color);
         font-weight: 500;
@@ -182,8 +182,6 @@ cursor:pointer;}
                 text-decoration: none;
                  color: var(--basic-color);
                 }
-
-
 
 .footer-webstudio {color: #2196f3;}
 .footer-webstudio .studio {color: #ffffff;}
